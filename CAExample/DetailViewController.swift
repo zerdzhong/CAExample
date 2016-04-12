@@ -32,6 +32,16 @@ class DetailViewController: UIViewController {
             UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.25, animations: { 
                 redView.center.x += 200
             })
+            
+            UIView.addKeyframeWithRelativeStartTime(0.25, relativeDuration: 0.25, animations: {
+                redView.center.y += 100.0
+            })
+            UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.25, animations: {
+                redView.center.x -= 200.0
+            })
+            UIView.addKeyframeWithRelativeStartTime(0.75, relativeDuration: 0.25, animations: {
+                redView.center.y -= 100.0
+            })
         }, completion: nil);
     }
 }
